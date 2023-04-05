@@ -1,13 +1,42 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero-height {
+  height: 80vh;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  overflow-x: hidden;
+}
+
+.hero-content {
+  background: url("https://thumbs.dreamstime.com/b/asian-food-background-various-ingredients-rustic-stone-top-view-vietnam-thai-cuisine-148762904.jpg")
+    no-repeat;
+  background-size: cover;
+}
+
+.shadow_inside {
+  box-shadow: inset 0 0 50px rgba(255, 255, 255, 0.6);
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 250px));
+  justify-content: space-evenly;
+  grid-gap: 20px;
+}
+
+.star {
+  height: 14px;
+}
+
+.hover-effect-product-img:hover {
+  transform: scale(1.2);
+  transition: 0.4s;
+}
+
+.card-hover:hover {
+  transform: scale(1.05) translateY(-5px);
+  transition: 0.4s;
 }
