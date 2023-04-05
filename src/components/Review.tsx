@@ -1,9 +1,10 @@
 function Review(props: any) {
   const { reviewCount } = props;
   return (
-    <div className="flex my-3 items-center">
+    <div className="flex my-3 items-center text-black">
       {reviewCount >= 1 ? (
         <svg
+          fill="orange"
           className="star"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 576 512"
@@ -12,6 +13,7 @@ function Review(props: any) {
         </svg>
       ) : reviewCount >= 0.5 ? (
         <svg
+          fill="orange"
           className="star"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 640 512"
@@ -20,6 +22,7 @@ function Review(props: any) {
         </svg>
       ) : (
         <svg
+          fill="orange"
           className="star"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 576 512"
@@ -29,6 +32,7 @@ function Review(props: any) {
       )}
       {reviewCount >= 2 ? (
         <svg
+          fill="orange"
           className="star"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 576 512"
@@ -37,6 +41,7 @@ function Review(props: any) {
         </svg>
       ) : reviewCount >= 1.5 ? (
         <svg
+          fill="orange"
           className="star"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 640 512"
@@ -45,6 +50,7 @@ function Review(props: any) {
         </svg>
       ) : (
         <svg
+          fill="orange"
           className="star"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 576 512"
@@ -54,6 +60,7 @@ function Review(props: any) {
       )}
       {reviewCount >= 3 ? (
         <svg
+          fill="orange"
           className="star"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 576 512"
@@ -62,6 +69,7 @@ function Review(props: any) {
         </svg>
       ) : reviewCount >= 2.5 ? (
         <svg
+          fill="orange"
           className="star"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 640 512"
@@ -70,6 +78,7 @@ function Review(props: any) {
         </svg>
       ) : (
         <svg
+          fill="orange"
           className="star"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 576 512"
@@ -79,6 +88,7 @@ function Review(props: any) {
       )}
       {reviewCount >= 4 ? (
         <svg
+          fill="orange"
           className="star"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 576 512"
@@ -87,6 +97,7 @@ function Review(props: any) {
         </svg>
       ) : reviewCount >= 3.5 ? (
         <svg
+          fill="orange"
           className="star"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 640 512"
@@ -95,6 +106,7 @@ function Review(props: any) {
         </svg>
       ) : (
         <svg
+          fill="orange"
           className="star"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 576 512"
@@ -104,6 +116,7 @@ function Review(props: any) {
       )}
       {reviewCount >= 5 ? (
         <svg
+          fill="orange"
           className="star"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 576 512"
@@ -112,6 +125,7 @@ function Review(props: any) {
         </svg>
       ) : reviewCount >= 4.5 ? (
         <svg
+          fill="orange"
           className="star"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 640 512"
@@ -120,6 +134,7 @@ function Review(props: any) {
         </svg>
       ) : (
         <svg
+          fill="orange"
           className="star"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 576 512"

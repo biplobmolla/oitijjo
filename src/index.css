@@ -23,7 +23,7 @@ body {
 .products-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(50px, 250px));
-  justify-content: space-evenly;
+  justify-content: space-between;
   grid-gap: 20px;
 }
 

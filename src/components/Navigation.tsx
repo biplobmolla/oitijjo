@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
 import { ShoppingCartOutlined, SearchOutlined } from "@ant-design/icons";
 import { Badge } from "antd";
+import { useState } from "react";
 
 function Navigation() {
+  const [searchValue, setSearchValue] = useState("");
   return (
     <div className="flex justify-between items-center px-16 py-3 shadow-md fixed w-full bg-white z-50">
       <div>
@@ -16,10 +18,14 @@ function Navigation() {
             className="w-full py-1.5 px-4 outline-0 bg-slate-300"
             type="search"
             placeholder="Search"
+            value={searchValue}
+            onChange={(e: any) => setSearchValue(e.target.value)}
           />
-          <div className="cursor-pointer w-16 bg-black absolute top-0 right-0 h-full flex justify-center items-center pb-2 pr-2">
-            <SearchOutlined className="text-white text-2xl" />
-          </div>
+          <Link to={`/search?query=${searchValue}`}>
+            <div className="cursor-pointer w-16 bg-black absolute top-0 right-0 h-full flex justify-center items-center pb-2 pr-2">
+              <SearchOutlined className="text-white text-2xl" />
+            </div>
+          </Link>
         </div>
       </div>
       <div className=" basis-1/12">

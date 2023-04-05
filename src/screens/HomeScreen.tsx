@@ -5,7 +5,7 @@ function HomeScreen() {
   return (
     <div className="bg-slate-100">
       <Hero />
-      <Products />
+      <Products screen="home" />
     </div>
   );
 }
