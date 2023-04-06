@@ -10,10 +10,12 @@ function App() {
     <BrowserRouter>
       <div className=" min-h-screen flex flex-col">
         <Navigation />
-        <Routes>
-          <Route path="/products" element={<ProductsScreen />} />
-          <Route path="/" element={<HomeScreen />} />
-        </Routes>
+        <main className="min-height">
+          <Routes>
+            <Route path="/products" element={<ProductsScreen />} />
+            <Route path="/" element={<HomeScreen />} />
+          </Routes>
+        </main>
         <Footer />
       </div>
     </BrowserRouter>
