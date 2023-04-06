@@ -52,19 +52,8 @@ function Products({ screen }: any) {
             isLoved={product.isLoved}
           />
         ))}
-        {/* <Product />
-        <Product />
-        <Product />
-        <Product />
-        <Product />
-        <Product />
-        <Product />
-        <Product />
-        <Product />
-        <Product />
-        <Product /> */}
       </div>
-      {screen === "products" ? null : (
+      {screen === "home" ? (
         <div className="text-center my-7">
           <Link
             className="font-bold cursor-pointer text-orange-700"
@@ -73,7 +62,7 @@ function Products({ screen }: any) {
             See all...
           </Link>
         </div>
-      )}
+      ) : null}
     </div>
   );
 }

@@ -4,18 +4,18 @@ import Navigation from "./components/Navigation";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomeScreen from "./screens/HomeScreen";
 import ProductsScreen from "./screens/ProductsScreen";
+import SearchScreen from "./screens/SearchScreen";
 
 function App() {
   return (
     <BrowserRouter>
-      <div className=" min-h-screen flex flex-col">
+      <div className="min-height-full flex flex-col bg-slate-100">
         <Navigation />
-        <main className="min-height">
-          <Routes>
-            <Route path="/products" element={<ProductsScreen />} />
-            <Route path="/" element={<HomeScreen />} />
-          </Routes>
-        </main>
+        <Routes>
+          <Route path="/products" element={<ProductsScreen />} />
+          <Route path="/search" element={<SearchScreen />} />
+          <Route path="/" element={<HomeScreen />} />
+        </Routes>
         <Footer />
       </div>
     </BrowserRouter>
