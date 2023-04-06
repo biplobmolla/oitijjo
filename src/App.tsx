@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomeScreen from "./screens/HomeScreen";
 import ProductsScreen from "./screens/ProductsScreen";
 import SearchScreen from "./screens/SearchScreen";
+import ProductScreen from "./screens/ProductScreen";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Navigation />
         <Routes>
           <Route path="/products" element={<ProductsScreen />} />
+          <Route path="/product-details" element={<ProductScreen />} />
           <Route path="/search" element={<SearchScreen />} />
           <Route path="/" element={<HomeScreen />} />
         </Routes>

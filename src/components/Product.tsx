@@ -22,13 +22,13 @@ function Product(props: any) {
           </Link>
         </div>
         <div className="flex justify-between items-center">
-          <h4 className="text-sm my-2 font-semibold leading-0">{category}</h4>
+          <h4 className="text-sm my-2 font-semibold leading-3">{category}</h4>
           <Review reviewCount={reviewCount} review={review} />
         </div>
-        <div className="flex justify-between my-4">
+        <div className="flex justify-between my-3 items-center">
           <div>
             <Link className="cursor-pointer" to="/product-details">
-              <h2 className="text-lg font-semibold m-0 leading-5">
+              <h2 className="text-lg font-semibold m-0 leading-3">
                 {title.substr(0, 20)}
                 {title.charAt(20) === "" ? "" : "..."}
               </h2>

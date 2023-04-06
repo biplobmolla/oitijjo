@@ -1,7 +1,7 @@
 function Review(props: any) {
   const { reviewCount, review } = props;
   return (
-    <div className="flex my-3 items-center text-black">
+    <div className="flex my-1 items-center text-black">
       {review >= 1 ? (
         <svg
           fill="orange"
