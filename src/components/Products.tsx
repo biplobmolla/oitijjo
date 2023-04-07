@@ -43,6 +43,7 @@ function Products({ screen }: any) {
         {products.map((product: any) => (
           <Product
             key={product._id}
+            _id={product._id}
             title={product.title}
             category={product.category}
             image={product.image}

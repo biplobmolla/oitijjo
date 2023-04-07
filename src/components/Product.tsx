@@ -5,12 +5,13 @@ import Review from "./Review";
 import { Link } from "react-router-dom";
 
 function Product(props: any) {
-  const { title, category, image, review, reviewCount, price, isLoved } = props;
+  const { title, category, image, review, reviewCount, price, isLoved, _id } =
+    props;
   return (
     <div className="card-hover">
       <Card>
         <div className="w-full rounded-lg overflow-hidden">
-          <Link to="/product-details" className="cursor-pointer">
+          <Link to={`/product-details/${_id}`} className="cursor-pointer">
             <img
               className="w-full hover-effect-product-img h-52"
               src={

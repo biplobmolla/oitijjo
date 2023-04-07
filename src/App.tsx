@@ -14,7 +14,7 @@ function App() {
         <Navigation />
         <Routes>
           <Route path="/products" element={<ProductsScreen />} />
-          <Route path="/product-details" element={<ProductScreen />} />
+          <Route path="/product-details/:id" element={<ProductScreen />} />
           <Route path="/search" element={<SearchScreen />} />
           <Route path="/" element={<HomeScreen />} />
         </Routes>
